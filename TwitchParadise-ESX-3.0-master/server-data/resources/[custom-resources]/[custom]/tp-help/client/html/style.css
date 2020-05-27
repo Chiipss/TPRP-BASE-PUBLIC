@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css?family=Syncopate|Unica+One');
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300,100italic,100);
+
+body, html { 
+	overflow-y: hidden;
+	background-color: transparent !important;
+	display: none;
+	font-size: 16px;
+}
+
+.app{
+    padding: 63px 75px 50px 140px;
+	height: 470px;
+	color:#333;
+}
+canvas#line-chart {
+    display: inline-block;
+}
+.app .content {
+    background: #f1f1f1;
+    padding-left: 10px;
+    overflow-y: auto;
+	max-height: 360px;
+	width: 100%;
+}
+.right-side {
+    display: block;
+    background: #d6d6d6;
+    font-size:10px;
+	vertical-align: top;
+	margin-bottom:20px;
+}
+.right-side ul{
+	list-style: none;
+    padding: 0 3px;
+}
+.right-side ul li{
+	display: table-row;
+}
+.right-side ul li span{
+	display: table-cell;
+	width:33%;
+	padding: 2px 2px;
+}
+.right-side ul li button{
+	cursor:pointer;
+}
+.right-side ul li .price{
+	font-weight:bold;
+}
+
+.plus{
+	color: #428B0A;
+	font-weight:bold;
+}
+.minus{
+	color: #C61930;
+	font-weight:bold;
+}
+.gielda_popup > div{
+	padding-bottom:20px;
+}
+.dialog.gielda_popup .note .price{
+	font-weight: bold;
+	padding: 0 10px;
+	font-size: 35px;
+}
+.dialog.gielda_popup .note .price:before{
+	content:'$'
+}
+button.close-dialog {
+    font-weight: bold;
+    padding: 5px;
+    font-family: cursive;
+    height: 25px;
+    line-height: 13px;
+    float: right;
+    display: inline-block;
+    width: 25px;
+}
+.dialog {
+    position: absolute;
+    top: 70px;
+    left: 150px;
+    width: 525px;
+    height: 340px;
+    padding: 8px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #c3c3c3;
+    box-shadow: 2px 2px 11px #909090;
+}
+.dialog input{
+	margin-right: 15px;
+	display: block;
+}
+.dialog .akcje > div{
+	display: inline-block; 
+	vertical-align: top;
+}
+.dialog .akcje > div em{
+	font-size: 12px;
+	padding: 2px;
+}
+.ok-block{
+	display: inline-block;
+	min-width: 15px; 
+	height:15px; 
+	padding: 4px;
+	background: #2ec738;
+	font-weight: bold;
+	font-size: 10px;
+	color: #fff;
+}
+.content{
+	background:	#f1f1f1;
+	padding-left:10px;
+}
+.row.pulpit {
+    padding: 63px 75px 50px 140px;
+    height: 470px;
+}
+.pomoc ul.menu{
+    list-style: none;
+    padding: 10px;
+    margin: 0 0 30px 0;
+}
+.pomoc ul.menu li  {
+	vertical-align: top;
+	padding: 5px;
+	display: inline-block;
+	border-radius: 3px;
+	transition: all 0.2s;
+	background: #25a3c1;
+}
+.pomoc ul.menu li span {
+	cursor: pointer;
+	display: block;
+	transition: all 0.2s;
+	padding: 5px;
+	color:#fff;
+	font-weight: bold:
+}
+.pomoc ul.menu li:hover span{
+	text-shadow: 1px 1px 1px #bbb;
+}
+.pomoc ul.menu li:hover{
+	background: #37b2d0;
+}
+/* main.css */
+.right-color { 
+	position: absolute;
+	top: 0px;
+	left: 30px;
+	background: rgb(40, 40, 40);
+	height: 190px;
+	width: 500px;
+	border: 1px solid black;
+	border-radius: 10px 10px 10px 10px;
+	z-index:5;
+}
+.spacer{
+    height: 30%;
+}
+.spacer2{
+	display:absolute;
+    top: -40px;
+	left: -150px;
+	width: 900px;
+	height:400px;
+	overflow-y: auto;
+	word-break: break-word;
+}
+table{
+	table-layout:fixed;
+}
+.page{
+	color: #fff;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 79vh;
+	font-size: 16px;
+}
+#close-help{
+	display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 28px;
+    font-family: cursive;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.page-main{	
+    font-size: 16px;
+}
+.page img{
+	max-width:100%
+}
+.page pre code{
+	color:#fff;
+}
+.pomoc {
+	font-family: 'Roboto', sans-serif;
+	height: calc(100vh-40px);	
+	color: #333;
+	width: calc(100%-40px);
+	position: absolute;
+	bottom: 20px;
+	left:20px;
+	top: 20px;
+	right:20px;
+	padding: 20px;
+	display: block;
+	z-index:1;
+	background:url('https://i.imgur.com/KM8vy6q.png') center center;
+	background-repeat: no-repeat;
+	border: 1px solid #777;
+	box-shadow: 1px 1px 5px #333;
+}
+.bckgrnd{
+	background: rgb(60, 60, 60);
+	position: absolute;
+	border-radius: 50px 5px 5px 5px;
+}
+
+#close {
+	display: inline-block;
+	float: right;
+	padding: 5px;
+	padding-right: 10px;
+	color: rgb(255, 0, 0);
+}
+
+
+/* change look of buttons when hovering over them */
+button:hover {
+	background-color: #c7dbfc;
+}
+
+/* Hide the sub-menus */
+div.police_actions, div.inv, div.voice {
+	display: none;
+}
+
+.custom {
+    width: 150px !important;
+}
+
+.sidenav {
+    height: 415px;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    left: 17%;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+	margin-top: 17px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

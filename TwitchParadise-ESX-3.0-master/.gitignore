@@ -1,0 +1,44 @@
+citizen/system_resources/
+*.dll
+citizen/clr2/cfg/mono/4.5/machine.config
+citizen/clr2/lib/mono/4.5/CitizenFX.Core.pdb
+citizen/clr2/lib/mono/4.5/CitizenFX.Core.Server.sym
+citizen/clr2/lib/mono/4.5/CitizenFX.Core.sym
+citizen/clr2/lib/mono/4.5/CitizenFX.Core.xml
+citizen/clr2/lib/mono/4.5/MsgPack.sym
+citizen/clr2/lib/mono/4.5/MsgPack.xml
+citizen/clr2/lib/mono/4.5/ref/CitizenFX.Core.Server.pdb
+citizen/clr2/lib/mono/4.5/ref/CitizenFX.Core.Server.sym
+citizen/clr2/lib/mono/4.5/System.Collections.Immutable.sym
+citizen/clr2/lib/mono/4.5/ref/CitizenFX.Core.Server.xml
+citizen/scripting/v8/timer.js
+citizen/scripting/v8/snapshot_blob.bin
+citizen/scripting/v8/natives_blob.bin
+citizen/scripting/v8/msgpack.js
+citizen/scripting/v8/main.js
+citizen/scripting/v8/index.d.ts
+citizen/scripting/v8/eventemitter2.js
+citizen/scripting/v8/console.js
+citizen/scripting/resource_init.lua
+citizen/scripting/lua/scheduler.lua
+citizen/scripting/lua/MessagePack.lua
+citizen/scripting/lua/json.lua
+citizen/scripting/lua/deferred.lua
+*.rpf
+*.db
+*.sfl
+*.dmp
+FXServer.exe
+citizen/scripting/v8/main.js
+server-data/cache
+crashes/
+server-data/dev-server.cfg
+citizen/system_resources/
+server-data/resources/PURGEadmin/dump/log.txt
+server-data/resources/[custom-resources]/[A-Newlyadded _ Testing Phase]/screenshot-basic/dist/
+server-data/resources/[custom-resources]/[A-Newlyadded _ Testing Phase]/screenshot-basic/node_modules/
+citizen/system_resources/
+server-data/resources/PURGEadmin/dump/log.txt
+server-data.rar
+server-data/resources/[custom-resources]/[API & Notifications]/3dme/log.txt
+server-data/start.bat

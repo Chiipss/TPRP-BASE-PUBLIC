@@ -1,0 +1,7 @@
+-- 0 == Guest
+-- 1 == Trial Moderator
+-- 2 == Moderator
+-- 3 == Senior Moderator
+-- 4 == Admin
+-- 5 == Head Admin 
+-- 6 == Owner

@@ -1,0 +1,1 @@
+TriggerEvent('esx_society:registerSociety', 'diamondcasino', 'Diamond Casino', 'society_casino', 'society_casino', 'society_casino', {type = 'public'})

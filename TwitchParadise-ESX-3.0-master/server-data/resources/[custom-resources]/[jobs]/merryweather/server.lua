@@ -1,0 +1,1 @@
+TriggerEvent('esx_society:registerSociety', 'merryweather', 'Merryweather Security', 'society_merryweather', 'society_merryweather', 'society_merryweather', {type = 'public'})

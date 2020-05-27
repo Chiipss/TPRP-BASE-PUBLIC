@@ -1,0 +1,2 @@
+Config.Receipt = "1487" -- Your receipt is the 4 digit number found on your order at modit.store
+Config.Email   = "curtislee1994@live.co.uk" -- Must be the same email you used to purchase the script with. Can check your receipt to verify.

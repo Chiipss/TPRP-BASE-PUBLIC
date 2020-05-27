@@ -1,0 +1,1 @@
+D:\TwitchParadise-ESX-3.0\run.cmd +exec server.cfg +set onesync_enabled 1

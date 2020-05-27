@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html> 
+
+<head>
+	<meta charset="utf-8">
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<div class="main">
+			<button class="button" id="SpawnPlayer" style="color: white; background-color: rgb(140, 204, 239); ">Spawn Now</button>
+			</br></br>
+
+		<div class="buttons">
+			<button class="button" id="LastLocation">Last Location</button>
+			<button class="button" id="Legion">Legion Square</button>
+			<button class="button" id="Pink">Pink Cage</button>
+			<button class="button" id="Bus">Bus Station</button>
+			<button class="button" id="Train">Train Station</button>
+			<!-- <button class="button" id="Pier">Pier</button>
+			<button class="button" id="Vinewood">Vinewood</button> -->
+		</div>
+	</div>
+
+</body>
+
+</html>
+
+<script type="text/javascript">
+	$(function () {
+		window.addEventListener("message", function (passed) {
+			var data = passed.data
+
+			switch (data["Action"]) {
+				case "OPEN_SPAWNMENU":
+					$("body").fadeIn(0)
+
+					break
+				default:
+					console.log("Could not read message with action: " + data.Action)
+					break
+			}
+		})
+	});
+
+	$('#SpawnPlayer').click(function(){
+	    $("body").fadeOut(0, function () {
+			$.post("http://tp-spawnselector/SpawnPlayer", JSON.stringify({}));
+		});
+	});
+
+	$('#LastLocation').click(function(){
+		$("body").fadeOut(0, function () {
+			$.post("http://tp-spawnselector/SpawnLast", JSON.stringify({}));
+		});
+	});
+
+	$('#Bus').click(function(){
+	    $.post("http://tp-spawnselector/SpawnBus", JSON.stringify({}));
+	});
+
+	$('#Train').click(function(){
+	    $.post("http://tp-spawnselector/SpawnTrain", JSON.stringify({}));
+	});
+
+	$('#Pink').click(function(){
+	    $.post("http://tp-spawnselector/SpawnPinkcage", JSON.stringify({}));
+	});
+
+	 $('#Legion').click(function(){
+	    $.post("http://tp-spawnselector/SpawnLegion", JSON.stringify({}));
+	});
+    /*
+	$('#Sandy').click(function(){
+	    $.post("http://tp-spawnselector/SpawnSandy", JSON.stringify({}));
+	});
+
+	$('#Pier').click(function(){
+	    $.post("http://tp-spawnselector/SpawnPier", JSON.stringify({}));
+	});
+
+	$('#Vinewood').click(function(){
+	    $.post("http://tp-spawnselector/SpawnVinewood", JSON.stringify({}));
+	}); */
+
+</script>

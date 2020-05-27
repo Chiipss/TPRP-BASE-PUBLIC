@@ -1,0 +1,1 @@
+TriggerEvent('esx_society:registerSociety', 'vanillaunicorn', 'Vanilla Unicorn', 'society_vanilla', 'society_vanilla', 'society_vanilla', {type = 'public'})

@@ -1,0 +1,1 @@
+TriggerEvent('esx_society:registerSociety', 'vagos', 'Vagos Tacos', 'society_vtacos', 'society_vtacos', 'society_vtacos', {type = 'public'})

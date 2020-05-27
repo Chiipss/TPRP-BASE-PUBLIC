@@ -1,0 +1,468 @@
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<script src="chart.min.js" type="text/javascript"></script>
+		 <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script> 		
+		<script>
+		$(function() {
+			/* open the UI for user */
+			window.addEventListener('message', function(event) {
+				if(event.data.type == "open"){
+					$('.pomoc').css('display', 'block')
+					$('body').css('display', 'block')
+					$('html').css('display', 'block')
+				} else if (event.data.type == "close"){
+					$('.pomoc').css('display', 'none')
+					$('body').css('display', 'none')
+					$('html').css('display', 'none')
+				}
+			});
+		});	
+		</script>
+	</head>
+
+    <body>	
+		<div class="pomoc">	
+			<div class="container main">
+				<div class="row">
+					<ul class="menu">
+						<li data-id="page-main">
+							<span>Home - news</span>
+						</li>						
+						<li data-id="rules">
+							<span>Rules</span>
+						</li>				
+						<li data-id="keybinds">
+							<span>Keybinds</span>
+						</li>
+						<li data-id="commands">
+							<span>Commands</span>
+						</li>
+						<li data-id="jobs_activities">
+							<span>Jobs & Activities</span>
+						</li>
+						<li data-id="faq">
+						<span>F.A.Q</span>
+						</li>
+					</ul>
+					
+					<div id="close-help" class ="btn btn-danger" style="display: inline-block;">
+							<span>X</span>
+					</div>
+				</div>	
+				
+				<div class=" page page-main">
+						<div class="row">
+							<div class="col-12">
+								<H1> Welcome to TwitchParadise - A place to call home</H1>
+								<p><b>TwitchParadiseRP is a heavy voice roleplay server which to us means our staff enforces being in-character at all times and enforce all forms of roleplay to keep every players story meaningful.</b></p>
+								<br/>
+								<h2>Information</h2>
+								<p><b>Website:</b> http://twitchparadise.com/</p>
+								<p><b>Discord:</b> https://discord.io/twitchparadise</p>
+								<p><b>Teamspeak3 Server:</b> ts.twitchparadise.com</p> <br/>
+								<p>This is a work in progress and subject to change.</p><br/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-lg-12"></div>
+							<div class="col-12  col-lg-12">
+								
+							</div>
+						</div>
+				</div>	
+				
+					<div class=" page keybinds" style="display:none;">						
+						<h2>Keybinds</h2>
+						<div class="row">
+							<div class="col-12 col-lg-6"><b>General Keybinds</b><br/>
+								<span class="btn btn-warning btn-sm mb-1"><b>B</b></span> - Point <br/>
+								<span class="btn btn-warning btn-sm mb-1"><b>H</b></span> - Get in a vehicle trunk if close to one <br/>
+								<span class="btn btn-warning btn-sm mb-1"><b>T</b></span> - Open the Chat <br/>
+								<span class="btn btn-warning btn-sm mb-1"><b>X</b></span> - Put the hands up <br/>
+								<span class="btn btn-warning btn-sm mb-1"><b>Z</b></span> - Change voice distance <br/>
+								<span class="btn btn-warning btn-sm mb-1"><b>CAPSLOCK</b></span> - Talk on radio or phone (TokoVoip) <br/>
+								<span class="btn btn-warning btn-sm mb-1"><b>TILDE(`)</b></span> - Shows a players ID <br/>
+								<span class="btn btn-warning btn-sm mb-1"><b>COMMA(,)</b></span> - Ragdoll (fall to the ground "naturally") <br/>
+								<span class="btn btn-warning btn-sm mb-1"><b>CTRL</b></span> - Crouch <br/>
+								<span class="btn btn-warning btn-sm mb-1"><b>LSHIFT + E</b></span> - Push a vehicle <br/>
+								<span class="btn btn-warning btn-sm mb-1"><b>LSHIFT + G</b></span> - Police tackle <br/>
+								<span class="btn btn-warning btn-sm mb-1"><b>TAB</b></span> - Show your Hotbar <br/>
+								<span class="btn btn-warning btn-sm mb-1"><b>F1</b></span> - Use the phone <br/>
+								<span class="btn btn-warning btn-sm mb-1"><b>F2</b></span> - Open the inventory <br/>
+								<span class="btn btn-warning btn-sm mb-1"><b>F3</b></span> - Open Job phone calls <br/>
+								<span class="btn btn-warning btn-sm mb-1"><b>F5</b></span> - Opens general menu <br/>
+								<span class="btn btn-warning btn-sm mb-1"><b>F7</b></span> - Check your Invoices <br/>
+								<span class="btn btn-warning btn-sm mb-1"><b>F8</b></span> - FiveM Console <br/>	
+								<span class="btn btn-warning btn-sm mb-1"><b>F9</b></span> - Opens the emote menu <br/>
+								<span class="btn btn-warning btn-sm mb-1"><b>F10</b></span> - Shows the Scoreboard <br/>	
+								<span class="btn btn-warning btn-sm mb-1"><b>F11</b></span> - Opens the mask menu <br/>
+								<span class="btn btn-warning btn-sm mb-1"><b>F12</b></span> - Takes a steam screenshot <br/>					
+								
+							</div>
+								<div class="col-12  col-lg-6">
+								<b>Police keybinds</b><br/>							
+								<span class="btn btn-primary btn-sm mb-1"><b>CTRL + X</b></span> - Police Radar (In car) <br/>
+								<span class="btn btn-primary btn-sm mb-1"><b>LSHIFT + E</b></span> - Arrest someone <br/>
+								<span class="btn btn-primary btn-sm mb-1"><b>X</b></span> - Resets plate reader if active <br/>
+								<span class="btn btn-primary btn-sm mb-1"><b>K</b></span> - Opens MDT with plate from car infront <br/><br/>
+								
+								<b>EMS keybinds</b><br/>	
+								<span class="btn btn-danger btn-sm mb-1"><b>E</b></span> - Heal a player while next to bed <br/>
+								<span class="btn btn-danger btn-sm mb-1"><b>ALT</b></span> - Turn the siren (on/off) <br/><br/>
+
+								<b>Mechanic keybinds</b><br/>	
+								<span class="btn btn-warning btn-sm mb-1"><b>X</b></span> - To use bed while in flatbed <br/>
+								<br/>
+								<b>Vehicle keybinds</b><br/>	
+								<span class="btn btn-warning btn-sm mb-1"><b>K</b></span> - Puts your Seatbelt (on/off)<br/>
+								<span class="btn btn-warning btn-sm mb-1"><b>Y</b></span> - Turn the vehicle engine (on/off) <br/>
+								<span class="btn btn-warning btn-sm mb-1"><b>M</b></span> - Opens vehicle control panel <br/>
+								<span class="btn btn-warning btn-sm mb-1"><b>U</b></span> - Lock owned vehicle <br/>
+								<span class="btn btn-warning btn-sm mb-1"><b>G</b></span> - Open trunk/glovebox inventory <br/>
+								<span class="btn btn-warning btn-sm mb-1"><b>LSHIFT</b></span> - Nitrous while in vehicle <br/> 
+								<span class="btn btn-warning btn-sm mb-1"><b>B</b></span> - Cruise control <br/>	
+								<span class="btn btn-warning btn-sm mb-1"><b>H</b></span> - Turn vehicle lights (on/off) <br/>
+								<span class="btn btn-warning btn-sm mb-1"><b>H (hold)</b></span> - Detach trailer if in a truck <br/>
+								<span class="btn btn-warning btn-sm mb-1"><b>Backspace</b></span> - Turns the hazards (on/off) <br/>
+								<span class="btn btn-warning btn-sm mb-1"><b>-</b></span> - Left Blinker <br/>
+								<span class="btn btn-warning btn-sm mb-1"><b>=</b></span> - Right Blinker <br/>
+								</div>
+							</div>
+						</div>	
+						
+					<div class=" page commands"  style="display:none;">						
+						<div class="row">
+							<div class="col-12 col-lg-6">
+							<h2>Commands</h2></br>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-lg-6">
+								<h3><b>General</b></h3>	
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/invite (player_ID))</b></span> - Invite someone inside your motel/house (must knock at the door first)  <br/>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/e (EMOTE)</b></span> - To play an emote  <br/>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/e c</b></span> - Cancels current emote  <br/>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/hood</b></span> - Open vehicle hood <br/>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/trunk</b></span> - Open vehicle trunk <br/>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/engine</b></span> - Turn engine off/on <br/>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/cash</b></span> - Shows cash <br/>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/job</b></span> - Shows your job <br/>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/transfervehicle "id" "plate"</b></span> - Transfer your vehicle to a player.<br/>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/givekey "</b></span> - Gives your car's key to the closest player.<br/>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/steal</b></span> - Access to a player inventory (need to have the hands up) <br/>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/ping ID</b></span> - Ping a player  <br/>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/ping accept</b></span> - Accept the ping  <br/>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/ping reject</b></span> - Reject the ping  <br/>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/ping remove</b></span> - Remove ping  <br/>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/carry</b></span> - Carry a player  <br/>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/takehostage</b></span> - Take player as a hostage  <br/>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/piggyback</b></span> - Put a player on your back  <br/>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/kmh or /mph </b></span> - Changes the displayed speed units  <br/>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/allkeys </b></span> - Gives your vehicle keys back if your game crashed before </br>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/g1 </b></span> - Put glasses on </br>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/g0 </b></span> - Takes glasses off </br>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/e1 </b></span> - Put earpiece on </br>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/e0 </b></span> - Takes earpiece off </br>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/m1 </b></span> - Put mask on </br>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/m0 </b></span> - Take mask off </br>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/t1 </b></span> - Put torso on </br>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/t0 </b></span> - Take torso off </br>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/h1 </b></span> - Put hat on </br>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/h0 </b></span> - Put torso on </br>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/showoutfits </b></span> - shows your saved your outfits </br>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/removeoutfit (ID) </b></span> - Detlets saved outfits. (ID = the slot you saved it to) </br>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/outfituse (ID) </b></span> - Will load your outfit. </br>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/saveclothes (ID) (NAME) </b></span> - This will save your current outfit. (NAME = Whatever you like) </br>
+								<br/>
+								<h3><b>Mechanic</b></h3>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/stopwinch</b></span> - Stop winch  <br/>
+								<span class="btn btn-warning btn-sm mb-1 mb-1"><b>/unfreezeflatbed</b></span> - Unfreeze bed  <br/>
+							</div>
+							<div class="col-12  col-lg-6">
+								<h3><b>Police</b></h3>								
+								<span class="btn btn-primary btn-sm mb-1 mb-1"><b>/raid</b></span> - Allows police to raid a property <br/>
+								<span class="btn btn-primary btn-sm mb-1 mb-1"><b>/mcard</b></span> - Shows right card <br/>
+								<span class="btn btn-primary btn-sm mb-1 mb-1"><b>/search</b></span> - Search players inventory <br/>
+								<span class="btn btn-primary btn-sm mb-1 mb-1"><b>/mdt</b></span> - Opens MDT <br/>
+								<h3><b>Police in vehicle</b></h3>
+								<span class="btn btn-primary btn-sm mb-1 mb-1"><b>/anpr</b></span> - Toggles ANPR system  <br/>
+								<span class="btn btn-primary btn-sm mb-1 mb-1"><b>/fixedanpr</b></span> - Toggles ANPR alerts from fixed ANPR cameras on the map (Whitelisted). <br/>
+								<span class="btn btn-primary btn-sm mb-1 mb-1"><b>/readplate</b></span> - Reads the plate of the vehicle in front of you and puts it in chat. <br/>
+								<span class="btn btn-primary btn-sm mb-1 mb-1"><b>/checkplate PLATE</b></span> - Returns the ANPR markers currently active for the specified plate. <br/>
+								<span class="btn btn-primary btn-sm mb-1 mb-1"><b>/focusanpr PLATE</b></span> - Displays fixed ANPR alerts <br/>
+								<span class="btn btn-primary btn-sm mb-1 mb-1"><b>/setplateinfo PLATE;INFO</b></span> - Adds ANPR markers (INFO) for the specified plate. <br/>
+								<span class="btn btn-primary btn-sm mb-1 mb-1"><b>/setvehinfo INFO</b></span> - Adds ANPR markers (INFO) for the plate of the vehicle you're currently in. <br/>
+								<span class="btn btn-primary btn-sm mb-1 mb-1"><b>/anprinterface</b></span> - Toggles the ANPR interface. <br/>
+								<br/>
+							</div>
+						</div>
+				</div>	
+				
+				<div class=" page jobs_activities"  style="display:none;">						
+					<div class="row">
+						<div class="col-12 col-lg-12">
+						<h1>Public Jobs & Activities Guide</h1><br/><br/>
+						<h2>Mining:</h2>
+							<p>Mining is a <b>free</b> activity in TwitchParadise, meaning you do not need a specific job role to do it.<br/>
+								- To start mining head to the quary on your minimap, There you will find a marker to get your pickaxe<br/>
+								- Once you have your pickaxe, proceed down into the quary area and swing your pickaxe at the rocks.<br/>
+								- When you have collected enough ore, you will need to go to the foundry (also on the map) to smelt your ore into ingots<br/>
+								- When you arrive at the foundry, proceed to the forge and you will be prompted to smelt your ores.<br/>
+								<b>Selling your ingots</b><br/>
+								- Head to the warehouse to sell your smelted minerals
+							</p>
+						<h2>Lumberjack:</h2>
+							<p>Lumberjack is a <b>free</b> activity in TwitchParadise, meaning you do not need a specific job role to do it.<br/>
+								- To start lumberjacking head to the saw mill on your minimap, There you will find a marker to get your axe<br/>
+								- Once you have your axe, proceed down into the wooded area and swing your axe at the trees<br/>
+								- When you have collected enough wood, you will need to go to the wood packaging area (also on the map) to pack your wood<br/>
+								<b>Selling your packaged wood</b><br/>
+								- Head to the warehouse to sell your packaged wood
+							<br/>
+							</p>
+						<h2>Warehouse Haulage:</h2>
+							<p>Warehouse Haulage is a <b>free</b> activity in TwitchParadise, meaning you do not need a specific job role to do it.<br/>
+								- To start haulage work, head to the warehouse marked on your map (Near the car dealership)<br/>
+								- Enter the marker and Press E to show the warehouse menu - You will see the current levels of stock held at the warehouse<br/>
+								- Press "Load Warehouse" and choose what type of freight you would like to haul.<br/>
+								<b>Choosing your vehicle type</b><br/>
+								- Once you have chosen your freight type (Wood, Food, Ingots) you will need to choose either a trailer load, or boxes.<br/>
+								- Whilst trailers will allow you to earn more money, vans are generally faster therefore you will complete the job quicker.<br/>
+								<b>Loading the freight</b><br/>
+								- Once you have chosen your delivery type (Trailer or Box) the relevant vehicle will spawn nearby<br/>
+								- Get in this vehicle and drive to the marker behind the warehouse to start loading your vehicle<br/>
+								- If you chose to haul a trailer, once you choose the amount of the load, the trailer will spawn near the warehouse<br/>
+								<b>Transporting the freight</b><br/>
+								- Once you are all loaded up, head to the export office at the docks<br/>
+								- Drive into the marker and leave your vehicle. Walk to the office your vehicle will be unloaded<br/>
+								- Once your vehicle is unloaded, you need to drive back to the warehouse to collect your pay!<br/>
+							</p>
+							<br/>
+						</div>
+					</div>	
+				</div>	
+				<div class=" page rules" 	style="display:none;">
+						<div class="row">
+							<div class="col-12">
+								<h1>RULES</h1>
+								<br>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-lg-12"></div>
+							<p><b>1. Community Respect</b><br>
+							This is the first and most important rule, as most (if not all) other rules fall under this one.
+							You should be respectful to the other players and administrators. You should always keep in mind that whatever you do in-game,
+							it should not infringe on others’ capacity to enjoy the game. Please remain respectful to all members of our community on all our
+							official community platforms (in-game servers, Forums, Discord and TS3)<br>
+							<b>Do not</b><br>
+								&bull; Use racist/homophobic/derogatory/overly sexual remarks in, or out, of character<br>
+								&bull; Repeatedly send someone angry or offensive out-of-character messages because of and in-character subject or event<br>
+								&bull; Harass a player outside of game after they have requested you not to for any reason</p><br>
+							<p><b>2. Account Ownership and Responsibility</b><br>
+								&bull; Account ownership is non-transferable and is the property of the creator.<br>
+								&bull; All players are responsible for their account, IP address, social club, and hardware. Linked accounts will face the same punishments and cannot be unlinked.<br>
+								&bull; Layers must not trade their accounts for money or valuables.</p>
+							<p><b>3. Donations</b><br>
+								&bull; Contact the staff of TwitchParadiseRP if you experience any issues with donating.<br>
+								&bull; TwitchParadiseRP does not refund donations.</p>
+							<p><b>4. Character Creation and Property</b><br>
+								&bull; Character names must be realistic and resemble real world names.<br>
+								&bull; Character names cannot be names of famous people.<br>
+								&bull; Character must not be default danny (just joining the server and not making an actual character)<br>
+								&bull; Players may not scam or deceive other players out of character for their property.<br>
+								&bull; Players may not transfer assets to other players or to other characters they own without proper IC reason.
+								Doing so will be treated as Real World Trading (RWT) unless approved by an admin.</p>
+							<p><b>5. Harassment and Knowledge of Rule Breaches</b><br>
+								&bull; It is prohibited to leak personal information of another person or to make such threats.<br>
+								&bull; It is prohibited to intimidate players from playing on the server or to continuously harass them in the game for OOC reasons 
+								&bull; to purposely make their game experience poor.<br>
+								&bull; Players must report cases of ban evasion, falsified forum reports, discussion of or jokes about cyber-attacks and other rule breaches.
+								&bull; An attempt to hide such information is punishable.</p>
+							<p><b>6. Hacking and Exploits</b><br>
+								&bull; Players must not have mods, trainers, or any kind of software installed that gives any advantage.
+								This includes any kind of hack to take down the server and reticles added by third party software and programs included with monitors.<br>
+								&bull; Server bugs may not be used for advantage and must be reported on TwitchParadiseRP forums.<br>
+								&bull; Server scripts should not be exploited in any way to your advantage, e.g. circumventing AFK timer or adding something to your screen to replicate a crosshair.<br>
+								&bull; Combat logging to get your health back</p>	
+							<p><b>7. Advertising and Public Chat</b><br>
+								&bull; It is prohibited to advertise or discuss other GTA V multiplayer communities on any TwitchParadiseRP platform<br>
+								including self created content promoted on TwitchParadiseRP platforms.<br>
+								&bull; All players must be able to communicate in English and IC chat must be English only.<br>
+								&bull; Foreign language in-character must be done as such: “[Language] English Text”<br>
+								&bull; Other languages may be used in private only if everyone who can see has agreed to it.<br>
+								&bull; Players may use offensive language in IC chat for roleplay but not excessively.<br>
+								&bull; Players must not threaten other players or use offensive language in OOC chat or OOC context.<br>
+								&bull; Global announcements must only contain realistic IC content and must not be offensive IC/OOC.<br>
+								&bull; Global announcements cannot be used to advertise illegal merchandise or activities.</p>
+							<p><b>8. IC and OOC Interactions</b><br>
+								&bull; Players are required to remain in-character (IC) at all times.<br>
+								&bull; Text chat, VOIP, radio, phone and commands like /ME are to be used only for IC content.<br>
+								&bull; IC content must not contain acronyms like “lol” or “u” or smiley faces excluding IC SMS.<br>
+								&bull; For OOC content, players must use chat commands that encases the content in brackets. For example: (( this is OOC content )).<br>
+								&bull; OOC videos or screenshots can be used as IC evidence only if the footage contains the character using the /e record command to hold a phone in their hand.<br>
+								&bull; You may roleplay a hidden camera, wire, or dash cam in a vehicle if recordings are unedited and include roleplay starting and ending.
+								Attempts to search must be answered truthfully in /do.<br>
+								&bull; Sexual, torture, or extremely gross roleplay is allowed only if all involved parties (participants and witnesses) have agreed to it in OOC text chat,
+								prior to the actual roleplay being performed.<br>
+								&bull; Only administrators are allowed force pause RP or investigate rule breaches.<br>
+								&bull; Players are welcome to voice their opinion but should never disobey administrators..</p>	
+							<p><b>9. Non-Roleplay (NRP)</b><br>
+								Actions that are unrealistic or promote poor quality roleplay are considered as non-roleplay.<br>
+								Examples of actions that are considered as non-roleplay:<br>
+								&bull; Cop Baiting - Provoking a reaction from emergency services without a realistic reason.<br>
+								&bull; Mercy Killing - Asking to be killed by a friend (Killing a friend falls under deathmatching).<br>
+								&bull; Unrealistic stunt jumping or the use of an expensive vehicle to ram into other vehicles.<br>
+								&bull; Spawning a scripted work vehicle and using it for crimes or submerging any vehicle in water.<br>
+								&bull; Swimming in water for an unrealistic amount of time or without a destination during a chase.<br>
+								&bull; Excessively speaking whilst you are downed.<br>
+								&bull; Players who disconnect during roleplay must reconnect and inform other parties in order to resume roleplay. If you are unable to reconnect it may be excused after providing proof.<br>
+								&bull; In a situation where a player gets away from an incident where they're being chased/pursued, they must wait 15 minutes before they can logout. Players should not instigate roleplay situations if they do not have time to play it through.<br>
+								&bull; Players who ignore answering roleplay commands directed at them, e.g. /me.<br>
+								&bull; In a situation where a player’s game crashes or the player is kicked from the server, they should be allowed to have the same advantages as they have had before their leave.</p>			
+							<p><b>10. Metagaming (MG)</b><br>
+								&bull; Metagaming is the act of relaying IC information through any method not considered IC that has the potential to change current or future roleplay scenarios or using that information.<br>
+								&bull; Mixing IC and OOC information without any benefit is a minor MG offense. For example, a player uses IC chat to call someone by their player ID displayed above their head.</p>
+							<p><b>11. Powergaming (PG)</b><br>
+								&bull; Forceful roleplay that does not give the other player a chance to roleplay their own response is considered powergaming. Other players must be given a chance to roleplay outcomes of actions.
+								&bull; Roleplay of unrealistic actions like super strength is another form of powergaming.<br>
+								&bull; All statements in /ME must be factually true in the roleplay as it sets grounds for roleplay.<br>
+								&bull; Roleplay is required before forceful server commands which may be used without consent from the other party if they are unresponsive and not typing for 30 seconds or more.<br>
+								&bull; A player cannot use the faction management script to destroy a faction as it is OOC.<br>
+								&bull; Government funded faction members must not abuse the salary system and must go off-duty when they are not performing their faction duties.<br>
+								&bull; If you perform an action which will influence potential RP in the future, you must have OOC evidence of performing said RP.<br>
+								OOC evidence should consist of a recording or screenshot and it needs to be timestamped (/time).<br>
+								RP would only be valid for 48 hours or until your character dies and NLR is triggered. The time limit does not apply to rule 7.</p>	
+							<p><b>12. No Crime Zones (NCZ)</b><br>
+								&bull; A no crime zone is an area where players may not commit any actions considered crimes.<br>
+								&bull; Players must not disobey orders of law enforcement officers but are allowed to flee.<br>
+								&bull; Players may not go to a NCZ after engaging in criminal activity resulting in an ongoing chase.<br>
+								<b>NO CRIME ZONES:</b><br>
+								&bull; Character creation spawn, Clothing Stores, Car Shops, Barber Shops</p>
+							<p><b>13. New Life Rule (NLR)</b><br>
+								&bull; The new life rule is triggered whenever a player’s character spawns at a hospital. Players cannot force their own death.<br>
+								&bull; The deceased character loses memory of their death, the events that caused it and the information collected in that time frame.<br>
+								&bull; Example: A player is killed in a robbery. The player’s knowledge of the robbery, the robber and their death is not usable by the player in their new life.<br>
+								&bull; All parties involved must avoid interaction with each other for 30 minutes. A player must not return to the area of their death for that time frame or attempt to retrieve lost possessions from involved players.
+								An exception is made for government faction members who may provide a faction duty service, though their memory being lost and inability to retrieve assets still apply.</p>
+							<p><b>14. Fear Roleplay (FRP)</b><br>
+								Fear roleplay is the concept of roleplaying fear for your character’s safety and life.<br>
+								Examples (but not limited to), where your character’s life is considered to be in direct danger:<br>
+								&bull; When you are on foot or bike and a weapon is aimed at you at close range.<br>
+								&bull; When you’re in a vehicle that is stalled or turned off and a weapon is aimed at you close range.<br>
+								&bull; When the attacker lowers their weapon to type or roleplay, your life remains in direct danger.<br>
+								&bull; Driving a vehicle in an active shootout more than once without the intent of protecting a friend, fleeing with it, or using it as cover.<br>
+								&bull; All emergency personnel are expected to Fear Roleplay if you are found to not fear roleplay then actions will be taken against you<br>
+								&bull; At the present moment EMT cannot be taken hostage or killed (Subject to change)<br>
+								Examples (but not limited to), where your character’s life is NOT considered to be in direct danger:<br>
+								&bull; When you are in a car which engine is not stalled.<br>
+								&bull; When you have a firearm drawn and are facing the other person before they attacked.<br>
+								&bull; When the attacker’s view is obstructed by an object or when they turn their back on you.<br>
+								As a victim, whose life is in direct danger:<br>
+								&bull; You must display reasonable value for your life and comply with the demands of your attacker.<br>
+								&bull; You cannot call 911 or call your friends or allies to aid you.</p>
+							<p><b>15. Deathmatch (DM)</b><br>
+								Deathmatching is the act of attacking a player or their property without a proper roleplay reason.<br>
+								Examples of valid reasons to attack another player:<br>
+								&bull; If they attempt to arrest or hurt you, an ally, or damage your property.<br>
+								&bull; If they report you to the police for a serious crime.<br>
+								&bull; If they are not in compliance with demands, attempt to escape, or call other players for help in a situation where they are required to display fear under fear roleplay rules.<br>
+								A player must allow their victim enough time to comply with the demands.<br>
+								If a player informs you that your VOIP isn’t working, you must either fix your VOIP using appropriate commands or use text to deliver your demand(s).<br>
+								Vehicles cannot be used to attack another player more than once, including a failed attempt.<br>
+								Attacking another player with no engagement in roleplay is not allowed.<br>
+								Killing a player that has obeyed all orders and demands during a roleplay situation is allowed, with roleplay, only within 3 hours of:<br>
+								&bull; Severe hostile or criminal action is taken against you, e.g. someone is robbing you at gunpoint. (Excluding police aiming a gun at you.)<br>
+								&bull; Someone is attempting to take your life.<br>
+								&bull; Someone is attempting to take the life of your close friend or ally, or if you have witnessed it happen.<br>
+								You must explain your reason to kill the player IC and have OOC evidence proving your reason.</p>
+							<p><b>16. Player Theft, Prison Breakout, and Kidnapping</b><br>
+								&bull; Players cannot force their victims to withdraw money from an ATM, sell property, or sell vehicles.<br>
+								&bull; Players cannot force their victims to hand over assets that are not present in the area.<br>
+								&bull; Permission for prison break must be approved by a Moderator+ prior to the attempt.<br>
+								&bull; Players may participate in no more than 1 prison break attempt within 1 OOC week.<br>
+								&bull; Official Factions may attempt 2 additional breaks in the case the prisoner is the faction leader.<br>
+								Players are allowed to kidnap or to take other players hostage for these specific reasons:<br>
+								&bull; You have to have a roleplay reason to kill the victim in accordance with the a, b, and c points under DM section.<br>
+								&bull; If you attempt to commit robbery of a property, you are allowed to hold the players within that property until you have finished the robbery. An NPC is not a valid hostage.<br>
+								&bull; If a hostage situation involves police in any way all of the players involved in holding the hostage may not take another hostage for 1 OOC day.<br>
+								&bull; There are to be no fake hostage's. Meaning you can not be a hostage for a friend and then receive any of the profits of robbing a bank or store. All hostage's are to be people you pick up off the street and should have nothing to do with the robbery.</p>
+							<p><b>17. Medical Roleplay</b><br>
+								&bull; EMS are not to be robbed, killed or taken hostage<br>
+								&bull; EMS are not to be involved or near any crimes.<br>
+								&bull; All EMS must go to all calls.<br>
+								&bull; It is asked of all players to rp out their injuries in a manner that makes sense and to the best of their abilities.</p>
+							<p><b>18. Aircraft usage</b><br>
+								&bull; Aircraft of any kind are not to be flown unless it is by a trained PD or EMS official. This includes all aircraft that spawn on the map.</p>
+							<p><b>19. Combat Log / Purposeful Disconnect</b><br>
+								&bull; When engaged in active roleplay players shall not disconnect from the server until the scenario has completely ended. Characters involved in criminal activity must be completely clear of any Law Enforcement interaction before disconnecting. Accidental disconnects should be communicated via Discord or TeamSpeak. Combat logging is a bannable offense first offense is a warning then a 3 day ban.</p>
+							<h5> For more information check out our forum!</h5>
+						</div>
+				</div>
+				<div class=" page faq" 	style="display:none;">
+						<div class="row">
+							<div class="col-12">
+								<h1>Frequently Asked Questions</h1>
+								<br>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-lg-12"></div>
+							<p><b>How do I speak?</b><br>
+								We use TokoVoip. To learn how to set this up please follow the instrutions on the toko screen or look at the forums.<br><br>
+
+							<b>How and where do I get a job?</b><br>
+								Go down to the job center marked as a purple "i" on your map. There you will find a list of jobs that are currently not whitelisted. However, a lot of jobs you don't need a job role! Whitelisted jobs are currently mechanics, EMS, and Police. To apply for these jobs, fill out the applications in their section of the forums.<br><br>
+
+							<b>Where can I buy a phone?</b><br>
+								Cell phones can be found at some of the convenience stores placed around the map and cost about $400.<br><br>
+
+							<b>What key do I press to do X?</b><br>
+								Please see the keybinds list or use /help.<br><br>
+
+							<b>Where do I get a gun license?</b><br>
+								Gun licenses can be purchased at the FIB building.<br><br>
+
+							<b>I’m bleeding out! What do I do?</b><br>
+								Contact EMS through your phone or come down to EMS. If you die before they are able to reach you, you will be prompted to send a GPS signal to EMS with G. If EMS are not available, press and hold E to take locals, you will not lose your items.<br><br>
+
+							<b>I just dropped dead. Why?</b><br>
+								Our server has a food system implemented. You will need to make sure to feed and water yourself occasionally to prevent yourself from starving or getting dehydrated.<br><br>
+
+							<b>What are the speed limits?</b><br>
+								The speed limits are as follow 40 mph in town, 55 mph on country roads and 80 mph on the highway.</p>
+						</div>
+				</div>
+			</div>	 
+		</div>
+    </body>
+	
+	<script type="text/javascript">
+	$(".pulpit li span").click(function(){
+		$('.main.container > *').hide();		
+		$('.'+$(this).data('id')).show();
+
+	});
+	$(".close-dialog").click(function(){	
+		$('.dialog').hide();
+	});		
+	$("#close-help").click(function(){
+		$('.page').hide();
+		$('.page-main').show();
+		$.post('http://tp-help/NUIFocusOff', JSON.stringify({}));
+	});
+	$(".menu li").click(function(){
+		$('.container .page').hide();		
+		$('.container .page.'+$(this).data('id')).show();
+	});
+	document.onkeyup = function (data) {
+		if (data.which == 27) { // Escape key
+			$('.pomoc').css('display', 'none')
+			$.post('http://tp-help/NUIFocusOff', JSON.stringify({}));
+		}
+	};
+	</script>
+</html>

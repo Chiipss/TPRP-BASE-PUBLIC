@@ -1,0 +1,1 @@
+TriggerEvent('esx_society:registerSociety', 'lswc', 'Los Santos Wine Co', 'society_lswc', 'society_lswc', 'society_lswc', {type = 'public'})

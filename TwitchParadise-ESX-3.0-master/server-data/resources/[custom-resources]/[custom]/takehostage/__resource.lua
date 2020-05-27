@@ -1,0 +1,6 @@
+client_script "cl_takehostage.lua"
+server_script "sv_takehostage.lua"
+--client_script "cl_piggyback.lua"
+--server_script "sv_piggyback.lua"
+client_script "cl_carry.lua"
+server_script "sv_carry.lua"

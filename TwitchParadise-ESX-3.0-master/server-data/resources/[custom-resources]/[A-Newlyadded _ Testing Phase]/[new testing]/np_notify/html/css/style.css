@@ -1,0 +1,91 @@
+body {
+    color: white;
+    font-family: "Segoe UI", "Segoe UI Symbol", "Segoe UI Emoji",  Arial, sans-serif;
+}
+
+.content {
+    padding: 3% 2% 0% 3%;
+}
+
+.fas {
+    padding-right:8px;
+}
+
+#code {
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding:2px;
+    background: rgb(209, 21, 52);
+    float: left;
+    border-radius: 4px;
+}
+
+#marker {
+    float: right;
+    padding-right: 4%;
+    padding-top: 2%;
+    font-size: xx-large;
+}
+
+#alert-name {
+    letter-spacing: 0.2px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-left:2%;
+    float: left;
+}
+
+#alert-info {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 28px;
+}
+
+.alerts {
+    margin: 5px;
+    width: 375px;
+    height: 70px;
+    color: white;
+}
+
+.notif-container {
+    margin-top: 40px;
+    float: right;
+}
+
+.notification {
+
+    width: 375px;
+    height: 70px;
+    color: white;
+}
+
+.success {
+    background: rgb(21, 100, 15, 0.95);
+    color: #fff;
+}
+
+.inform {
+    box-shadow: -5px 0px 0px 0px rgba(204, 0, 0, 0.788) inset;
+    background: linear-gradient(238deg, #eb0f0fb6, #0e47e4b6);
+    background-size: 1200% 1200%;
+    -webkit-animation: rainbow 10s ease infinite;
+    animation: rainbow 3s ease infinite;
+}
+
+.error {
+    box-shadow: -5px 0px 0px 0px rgb(0, 183, 255) inset;
+    background: rgba(13, 63, 121, 0.8);   
+}
+
+@-webkit-keyframes rainbow {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+  }
+  @keyframes rainbow {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+  }

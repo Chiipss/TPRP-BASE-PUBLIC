@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Syncopate|Unica+One');
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300,100italic,100);
+
+body {
+    overflow-y: hidden;
+    display: none;
+    
+}
+
+button {
+    padding: 4%;
+    margin: 2%;
+    background: #a5a5a5;
+    border: none;
+}
+
+h1 {
+    padding: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #ffffff;
+	font-size: 20px;
+}
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-weight: bolder;
+    background-color: rgb(0, 0, 0, 0.8);
+    margin-left: 0%;
+    height: 50px;
+    width: 120%;
+    display: block;
+    border-radius: 3px;
+    transition: 0.30s
+}
+
+button:hover {
+    background-color: rgb(140, 204, 239); 
+    background: rgb(140, 204, 239); 
+    transition: 0.30s
+}
+
+.main{
+    background-color: rgb(140, 204, 239); 
+    margin:0 auto;
+    width: 300px;
+    height: 50px;
+    margin-left: 1%;
+    margin-top: 2%;
+    border-radius: 3px;
+	bottom: 100%;
+}
