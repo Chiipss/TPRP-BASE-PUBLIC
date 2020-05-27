@@ -10,10 +10,10 @@ I will not help you start the server,
 
 Make sure:
 
-You change Tokovoip IP.
-Add your licence key.
-Add your SteamAPI key.
-Load the SQL file.
+You change Tokovoip IP,
+Add your licence key,
+Add your SteamAPI key,
+Load the SQL file,
 Check server.cfg for other settings.
 
 MAKE SURE YOU USE TXADMIN WITH THIS SERVER or shit will break.
